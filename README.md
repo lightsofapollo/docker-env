@@ -76,7 +76,7 @@ export DOCKER_HOST=127.0.0.1:4243
 ```sh
 # reload zsh config
 zsh
-``
+```
 
 ### Try it out
 
