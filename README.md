@@ -34,6 +34,18 @@ Download the platform specific binary and place it on your PATH.
   - OSX: https://get.docker.io/builds/Darwin/x86_64/docker-latest 
   - LINUX: https://get.docker.io/builds/Linux/x86_64/docker-latest
 
+For example on OSX:
+
+```sh
+curl https://get.docker.io/builds/Darwin/x86_64/docker-latest > /usr/local/bin/docker
+```
+
+Linux:
+
+```sh
+curl https://get.docker.io/builds/Linux/x86_64/docker-latest > /usr/local/bin/docker
+```
+
 ### Start vagrant
 
 ```sh
