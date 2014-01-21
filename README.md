@@ -70,8 +70,13 @@ For example I added this to my .zshrc
 ```sh
 #... stuff in zshrc
 export DOCKER_HOST=127.0.0.1:4243
-zsh
 ```
+
+
+```sh
+# reload zsh config
+zsh
+``
 
 ### Try it out
 
