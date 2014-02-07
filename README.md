@@ -7,6 +7,9 @@ I wanted something that I could leave running forever (and manage) with
 vagrant (rather then virtualbox) since that is what I am
 comfortable with.
 
+Its important to node that you CAN use volumes (-v) from your OSX host
+as long as your somewhere within $HOME since an NFS mount is created
+between your home and the VM (this is amazing btw).
 
 ## Installation
 
