@@ -58,23 +58,24 @@ vagrant up
 
 ### Add the DOCKER_HOST to your environment variables
 
-DOCKER_HOST is a magic environment variable recognized by the docker
-CLI. If your docker server is running on the same machine as your host
-you don't need to care about this but in our case we need to tell the
-client where to connect:
+The `Vagrantfile` uses a private network configuration set to ip 192.168.50.10.
+This means the `DOCKER_HOST` can be the same across installations and
+you can easily each the docker host and containers within that host.
+
+
+There is some manual configuration needed to get the benefits of this
 
 ```sh
 # Add this environment variable somewhere (just ip:port no protocol)
-DOCKER_HOST=127.0.0.1:4243
+DOCKER_HOST=192.168.50.10:4243
 ```
 
 For example I added this to my .zshrc
 
 ```sh
 #... stuff in zshrc
-export DOCKER_HOST=127.0.0.1:4243
+export DOCKER_HOST=192.168.50.10:4243
 ```
-
 
 ```sh
 # reload zsh config
@@ -93,6 +94,13 @@ You should see something like this as a result:
 
 ```
 CONTAINER ID        IMAGE                        COMMAND                CREATED             STATUS              PORTS                     NAMES
+```
+
+Additionally a host entry can be added if you do not want to remember
+that ip address:
+
+```
+192.168.50.10 docker
 ```
 
 ### Usage
