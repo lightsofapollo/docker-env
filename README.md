@@ -74,7 +74,7 @@ For example I added this to my .zshrc
 
 ```sh
 #... stuff in zshrc
-export DOCKER_HOST=192.168.50.10:4243
+export DOCKER_HOST=tcp://192.168.50.10:4243
 ```
 
 ```sh
